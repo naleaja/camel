@@ -31,7 +31,7 @@ public class FileCopierWithCamel {
         // add our route to the CamelContext
         context.addRoutes(new RouteBuilder() {
             public void configure() {
-                from("file:data/inbox?noop=true").to("file:data/outbox");
+                from("file:data/inbox?noop=true").to("file:c:/tmp/data/outbox");
             }
         });
 
