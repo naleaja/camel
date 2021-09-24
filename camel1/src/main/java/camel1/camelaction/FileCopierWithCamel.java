@@ -27,7 +27,7 @@ public class FileCopierWithCamel {
     public static void main(String args[]) throws Exception {
         // create CamelContext
         CamelContext context = new DefaultCamelContext();
-
+        System.out.println("Start Copying File");
         // add our route to the CamelContext
         context.addRoutes(new RouteBuilder() {
             public void configure() {
